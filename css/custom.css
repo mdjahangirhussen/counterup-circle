@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    position: relative; 
+}
+.main-menu .navbar{
+    background: seagreen;
+}
+.main-menu .navbar-brand{
+    padding-top: 0;   
+}
+.main-menu .navbar-brand h2{
+    color:#ddd;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+.main-menu .navbar{
+    padding: 0;
+}
+.primary-menu ul li a{
+    color: #fff;
+    font-size: 18px;
+    text-transform: capitalize;
+    border-top: 3px solid transparent;
+    transition: all .3s ease;
+    position: relative;
+    padding: 30px 15px !important;
+    overflow: hidden;
+}
+.primary-menu ul li a:hover,
+.primary-menu ul li a.active{
+    border-top: 3px solid #fff;
+    color:aqua !important;
+}
+.primary-menu ul li a:hover:before,
+.primary-menu ul li a.active:before{
+    top:0%;
+     opacity: 1;
+}
+.primary-menu ul li.drop{
+        position: relative;
+     
+       
+}
+.home-dropdwon.dropdown {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.28) none repeat scroll 0 0;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+    left: 0;
+    top: 120%;
+    margin: 0;
+    opacity: 0;
+    padding: 0;
+    transition: all 0.2s ease;
+    width: 220px;
+    z-index: 9999;
+    visibility: hidden; 
+}
+.home-dropdwon.dropdown li {
+    list-style: none;
+}
+
+.home-dropdwon.dropdown li a {
+    display: block;
+    padding: 10px 0 !important;
+    text-align: center;
+    text-decoration: none;
+}
+
+.primary-menu ul li.drop:hover .home-dropdwon.dropdown {
+   top:100%;
+    opacity: 1;  
+    visibility: inherit;
+}
+
+.v-center{
+    display: flex;
+    align-items: center;
+    
+    height: 100vh;
+    
+}
+.home-section{
+     background: linear-gradient(to bottom, #75cbe7 0%, #138fc2 100%);
+    color:#fff;
+   justify-content: center;
+   
+}
+.blog-section{
+    background:gray;
+    width:100%;
+    height:100vh;
+    color:#fff;
+}
+.work-section{
+    background: linear-gradient(to bottom, #75cbe7 0%, #138fc2 100%);
+    color:#fff;
+    overflow: hidden;
+}
+.about-section{
+    background:seagreen;
+    width:100%;
+    height:100vh;
+    color:#fff;
+}
+.contact-section{
+    background:#FFE793;
+    width:100%;
+    height:100vh;
+    color:#fff;
+}
+.home-section ,
+.blog-section ,
+.work-section ,
+.about-section ,
+.contact-section h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+
+
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129; /* Circumference */
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete { opacity: 0.25; }
+
+svg.radial-progress circle.complete { stroke-dasharray: 219.91148575129; /* Circumference */ }
+
+svg.radial-progress text {
+  fill: #fff;
+  font: 400 1em/1 'Oswald', sans-serif;
+  text-anchor: middle;
+}
+
+/*** COLORS ***/
+/* Primary */
+
+svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; }
+
+/* Secondary */
+
+svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; }
+
+/* Tertiary */
+
+svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; }
+
+/* Quaternary */
+
+svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; }
+
+/* Quinary */
+
+svg.radial-progress:nth-of-type(6n+5) circle { stroke: #fddc32; }
