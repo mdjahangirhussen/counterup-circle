@@ -36,6 +36,11 @@
 </head>
 
 <body data-spy="scroll" data-target="#primary-menu" data-offset="70">
+    
+    
+    <div class="scrollbar" id="style-1">
+      <div class="force-overflow"></div>
+    </div>
 
     <!--   <header class="header-top"></header>-->
     <!--    Start main-menu-Top section-->
@@ -52,7 +57,7 @@
                 <div class="collapse navbar-collapse primary-menu" id="navbarSupportedContent">
                     <ul class="navbar-nav main-navbar ml-auto">
                         <li class="nav-item drop">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link home" href="#home">Home</a>
                             <ul class="home-dropdwon dropdown">
                                 <li><a href="#">Home</a></li>
                                 <li><a href="#">about</a></li>
@@ -76,7 +81,7 @@
                 </div>
             </div>
         </nav>
-    </section> <!--    End main-menu-Top section-->
+    </section>     End main-menu-Top section
     <section class="home-section v-center" id="home">
         <div class="container">
             <div class="row justify-content-center">
@@ -101,33 +106,37 @@
             <section class="about-section" id="about">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <svg class="radial-progress" data-percentage="50" viewBox="0 0 80 80">
-                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 39.58406743523136;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">50%</text>
-                        </svg>
+                        <div class="col-md-3 col-6">
+                            <svg class="radial-progress radial-progress1" data-percentage="50" viewBox="0 0 80 80">
+                                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">50%</text>
+                            </svg>
+                        </div>
 
-                        <svg class="radial-progress" data-percentage="33" viewBox="0 0 80 80">
-                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 147.3406954533613;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">33%</text>
-                        </svg>
-                        <svg class="radial-progress" data-percentage="71" viewBox="0 0 80 80">
-                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 63.774330867872806;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">71%</text>
-                        </svg>
-                        <svg class="radial-progress" data-percentage="24" viewBox="0 0 80 80">
-                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 167.13272917097697;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">24%</text>
-                        </svg>
+                        <div class="col-md-3 col-6">
+                            <svg class="radial-progress radial-progress2" data-percentage="33" viewBox="0 0 80 80">
+                                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">33%</text>
+                            </svg>
+                        </div>
 
-                        <svg class="radial-progress" data-percentage="100" viewBox="0 0 80 80">
-                            <circle class="incomplete" cx="40" cy="40" r="35"></circle>
-                            <circle class="complete" cx="40" cy="40" r="35" style="stroke-dashoffset: 0;"></circle>
-                            <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">100%</text>
-                        </svg>
+                        <div class="col-md-3 col-6">
+                            <svg class="radial-progress radial-progress3" data-percentage="71" viewBox="0 0 80 80">
+                                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">71%</text>
+                            </svg>
+
+                        </div>
+                        <div class="col-md-3 col-6">
+                            <svg class="radial-progress radial-progress4" data-percentage="75" viewBox="0 0 80 80">
+                                <circle class="incomplete" cx="40" cy="40" r="35"></circle>
+                                <circle class="complete" cx="40" cy="40" r="35"></circle>
+                                <text class="percentage" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">75%</text>
+                            </svg>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -148,7 +157,7 @@
     <script src="js/custom.js"></script>
 
     <script>
-     $(document).ready(function () {
+        $(document).ready(function() {
             // Remove svg.radial-progress .complete inline styling
             $('.radial-progress').each(function(index, value) {
                 $(this).find($('circle.complete')).removeAttr('style');
@@ -179,5 +188,8 @@
             }).trigger('scroll');
 
         });
+
     </script>
-</body></html>
+</body>
+
+</html>

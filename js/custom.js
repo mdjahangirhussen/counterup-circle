@@ -48,3 +48,12 @@ $(function () {
     }); //smooth scrolling
 
 });
+
+$(document).ready(function(){
+    $('.home').click(function(){
+          $('.home').addClass('bg-color');                  
+    });
+    
+    
+   
+});

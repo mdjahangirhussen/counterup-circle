@@ -37,10 +37,18 @@ body{
     top:0%;
      opacity: 1;
 }
-.primary-menu ul li.drop{
+.primary-menu ul li.drop a{
         position: relative;
      
        
+}
+
+.bg-color{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+
 }
 .home-dropdwon.dropdown {
     position: absolute;
@@ -67,7 +75,7 @@ body{
     text-decoration: none;
 }
 
-.primary-menu ul li.drop:hover .home-dropdwon.dropdown {
+.primary-menu ul li.drop:hover .home-dropdwon.dropdown{
    top:100%;
     opacity: 1;  
     visibility: inherit;
@@ -149,20 +157,16 @@ svg.radial-progress text {
 /*** COLORS ***/
 /* Primary */
 
-svg.radial-progress:nth-of-type(6n+1) circle { stroke: #a2ed56; }
+svg.radial-progress.radial-progress1 circle { stroke: #a2ed56; }
 
 /* Secondary */
 
-svg.radial-progress:nth-of-type(6n+2) circle { stroke: #83e4e2; }
+svg.radial-progress.radial-progress2 circle { stroke: #83e4e2; }
 
 /* Tertiary */
 
-svg.radial-progress:nth-of-type(6n+3) circle { stroke: #fd6470; }
+svg.radial-progress.radial-progress3 circle { stroke: #fd6470; }
 
 /* Quaternary */
 
-svg.radial-progress:nth-of-type(6n+4) circle { stroke: #fca858; }
-
-/* Quinary */
-
-svg.radial-progress:nth-of-type(6n+5) circle { stroke: #fddc32; }
+svg.radial-progress.radial-progress4 circle { stroke: #fca858; }
